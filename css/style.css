@@ -26,6 +26,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
 }
 .nav .logo img{
     width: 10vw;
@@ -175,8 +176,8 @@ header{
 .sticky{
     width: 100%;
     background: white;
-    position: sticky;
-    top: 0px;
+    /* position: sticky;
+    top: 0px; */
 }
 
 .filters{
@@ -186,6 +187,7 @@ header{
     justify-content: left;
     align-items: center;
     width: 100%;
+    
 }
 .filters .filter-items{
     padding: 0 4px 0 4px;
@@ -733,7 +735,4 @@ header{
     font-size: 13px;
     font-weight: lighter;
 }
-
-
-
 
