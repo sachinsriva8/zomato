@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 body {
   padding: 0;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   text-decoration: none;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
@@ -19,6 +21,7 @@ header {
   margin-bottom: 1rem;
   margin-top: 0.3rem;
 }
+
 .nav {
   margin: 0 8vw 0 5vw;
   padding: 0.4rem 1vh 0 1vw;
@@ -27,11 +30,13 @@ header {
   justify-content: space-between;
   flex-wrap: wrap-reverse;
 }
+
 .nav .logo img {
   width: 10vw;
   margin-top: 0.1rem;
   padding-left: 2px;
 }
+
 .search {
   max-width: 60vw;
   padding: 0.1rem 0 0 0.2rem;
@@ -41,11 +46,13 @@ header {
   border-radius: 10px;
   align-items: center;
 }
+
 .search .search-items {
   display: flex;
   padding: 0px 5px;
   align-items: center;
 }
+
 .search .search-items p {
   width: 15vw;
   border-right: 1.5px solid lightgrey;
@@ -66,6 +73,7 @@ header {
 .search .search-items:first-child {
   color: lightcoral;
 }
+
 .search .search-items:last-child {
   color: gray;
 }
@@ -79,6 +87,7 @@ header {
   font-family: Poppins;
   font-weight: lighter;
 }
+
 .signup {
   max-width: 10vw;
   align-items: center;
@@ -94,6 +103,7 @@ header {
   width: 100%;
   border-bottom: 0.5px solid lightgray;
 }
+
 .category {
   margin: 2vh 8vw 0 5vw;
   padding: 0 1vw 0 1vw;
@@ -157,6 +167,7 @@ header {
   font-size: 20px;
   color: darkgray;
 }
+
 .category .category-items:first-child {
   border-bottom: 2px solid red;
 }
@@ -189,6 +200,7 @@ header {
   /* position: sticky;
     top: 0; */
 }
+
 .filters .filter-items {
   padding: 0 4px 0 4px;
   display: flex;
@@ -390,12 +402,7 @@ header {
   max-width: 20rem;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .section-3-item-img {
+.section-3 .section-3-container .cards .middle .section-3-item .section-3-item-img {
   width: 20rem;
   position: relative;
 }
@@ -406,14 +413,7 @@ header {
   border-radius: 10px;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .section-3-item-img
-  .image
-  .off {
+.section-3 .section-3-container .cards .middle .section-3-item .section-3-item-img .image .off {
   position: absolute;
   bottom: 5px;
   left: 0px;
@@ -424,14 +424,7 @@ header {
   padding: 2px;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .section-3-item-img
-  .image
-  .time {
+.section-3 .section-3-container .cards .middle .section-3-item .section-3-item-img .image .time {
   position: absolute;
   bottom: 5px;
   right: 5px;
@@ -458,28 +451,14 @@ header {
   margin-top: -1rem;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .restpart
-  .name
-  .rest-name {
+.section-3 .section-3-container .cards .middle .section-3-item .restpart .name .rest-name {
   color: black;
   font-size: 19px;
   font-weight: 500;
   font-family: Poppins;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .restpart
-  .name
-  .rating {
+.section-3 .section-3-container .cards .middle .section-3-item .restpart .name .rating {
   background-color: green;
   color: white;
   font-weight: 400;
@@ -489,13 +468,7 @@ header {
   font-family: Poppins;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .restpart
-  .description {
+.section-3 .section-3-container .cards .middle .section-3-item .restpart .description {
   font-size: 12px;
   display: flex;
   justify-content: space-between;
@@ -504,14 +477,7 @@ header {
   border-bottom: 1px solid gray;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .restpart
-  .description
-  .rest-descrpt {
+.section-3 .section-3-container .cards .middle .section-3-item .restpart .description .rest-descrpt {
   font-family: Poppins;
   font-size: 15px;
   width: 12.5rem;
@@ -521,27 +487,14 @@ header {
   color: gray;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .restpart
-  .description
-  .estimate {
+.section-3 .section-3-container .cards .middle .section-3-item .restpart .description .estimate {
   font-family: Poppins;
   font-size: 15px;
   color: gray;
   font-weight: lighter;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .restpart
-  .trend {
+.section-3 .section-3-container .cards .middle .section-3-item .restpart .trend {
   font-size: 10px;
   display: flex;
   justify-content: space-between;
@@ -549,41 +502,20 @@ header {
   border-top: 0.5px solid rgb(231, 231, 231);
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .restpart
-  .trend
-  .trndimg {
+.section-3 .section-3-container .cards .middle .section-3-item .restpart .trend .trndimg {
   height: 20px;
   width: 20px;
   border-radius: 50%;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .restpart
-  .trend
-  .total-order {
+.section-3 .section-3-container .cards .middle .section-3-item .restpart .trend .total-order {
   font-family: Poppins;
   font-weight: 500;
   font-size: 12px;
   color: gray;
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle
-  .section-3-item
-  .restpart
-  .trend
-  .safetyimg {
+.section-3 .section-3-container .cards .middle .section-3-item .restpart .trend .safetyimg {
   height: 20px;
   width: 50px;
   border-radius: 1px;
@@ -596,14 +528,7 @@ header {
   box-shadow: 0 4px 4px rgb(228, 227, 227);
 }
 
-.section-3
-  .section-3-container
-  .cards
-  .middle:nth-child(5)
-  .section-3-item
-  .section-3-item-img
-  .image
-  .off {
+.section-3 .section-3-container .cards .middle:nth-child(5) .section-3-item .section-3-item-img .image .off {
   background-color: transparent;
 }
 
@@ -648,34 +573,20 @@ header {
   border-radius: 10px;
 }
 
-.section-4
-  .section-4-container
-  .section-4-item-2
-  .section-4-items
-  .section-4-items-1 {
+.section-4 .section-4-container .section-4-item-2 .section-4-items .section-4-items-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.section-4
-  .section-4-container
-  .section-4-item-2
-  .section-4-items
-  .section-4-items-1
-  p {
+.section-4 .section-4-container .section-4-item-2 .section-4-items .section-4-items-1 p {
   font-family: Poppins;
   font-size: 1.3rem;
   font-weight: 400;
   width: 82vw;
 }
 
-.section-4
-  .section-4-container
-  .section-4-item-2
-  .section-4-items
-  .section-4-items-1
-  .section-4-items-1-icon {
+.section-4 .section-4-container .section-4-item-2 .section-4-items .section-4-items-1 .section-4-items-1-icon {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -715,23 +626,14 @@ header {
   width: 10vw;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-1
-  .section-5-items-1-2 {
+.section-5 .section-5-container .section-5-items .section-5-items-1 .section-5-items-1-2 {
   display: flex;
   justify-content: right;
   column-gap: 1.2rem;
   margin-right: -1.2rem;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-1
-  .section-5-items-1-2
-  .section-5-item-1-2-1 {
+.section-5 .section-5-container .section-5-items .section-5-items-1 .section-5-items-1-2 .section-5-item-1-2-1 {
   border: 1px solid black;
   border-radius: 10px;
   display: flex;
@@ -744,13 +646,7 @@ header {
   border-radius: 7px;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-1
-  .section-5-items-1-2
-  .section-5-item-1-2-1
-  p {
+.section-5 .section-5-container .section-5-items .section-5-items-1 .section-5-items-1-2 .section-5-item-1-2-1 p {
   color: black;
   font-family: Poppins;
   font-size: 18px;
@@ -758,22 +654,11 @@ header {
   text-align: center;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-1
-  .section-5-items-1-2
-  .section-5-item-1-2-1:last-child {
+.section-5 .section-5-container .section-5-items .section-5-items-1 .section-5-items-1-2 .section-5-item-1-2-1:last-child {
   width: 7rem;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-1
-  .section-5-items-1-2
-  .section-5-item-1-2-1
-  #angel {
+.section-5 .section-5-container .section-5-items .section-5-items-1 .section-5-items-1-2 .section-5-item-1-2-1 #angel {
   color: black;
 }
 
@@ -784,22 +669,13 @@ header {
   column-gap: 1rem;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-2
-  .section-5-item-2-1 {
+.section-5 .section-5-container .section-5-items .section-5-items-2 .section-5-item-2-1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-2
-  .section-5-item-2-1
-  .about-section {
+.section-5 .section-5-container .section-5-items .section-5-items-2 .section-5-item-2-1 .about-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -807,58 +683,31 @@ header {
   row-gap: 0.5rem;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-2
-  .section-5-item-2-1
-  p {
+.section-5 .section-5-container .section-5-items .section-5-items-2 .section-5-item-2-1 p {
   font-family: Poppins;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 2px;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-2
-  .section-5-item-2-1
-  .about-section
-  a {
+.section-5 .section-5-container .section-5-items .section-5-items-2 .section-5-item-2-1 .about-section a {
   font-family: Poppins;
   font-size: 14px;
   font-weight: lighter;
   color: gray;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-2
-  .section-5-item-2-1:nth-child(3)
-  .enterprise {
+.section-5 .section-5-container .section-5-items .section-5-items-2 .section-5-item-2-1:nth-child(3) .enterprise {
   margin-top: 1.5rem;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-2
-  .section-5-item-2-1:nth-child(5)
-  .sociallinks {
+.section-5 .section-5-container .section-5-items .section-5-items-2 .section-5-item-2-1:nth-child(5) .sociallinks {
   display: flex;
   justify-content: space-between;
   column-gap: 0.5rem;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-2
-  .section-5-item-2-1:nth-child(5)
-  .sociallinks
-  .fa {
+.section-5 .section-5-container .section-5-items .section-5-items-2 .section-5-item-2-1:nth-child(5) .sociallinks .fa {
   width: 13px;
   height: 13px;
   border-radius: 50%;
@@ -872,12 +721,7 @@ header {
   color: white;
 }
 
-.section-5
-  .section-5-container
-  .section-5-items
-  .section-5-items-2
-  .section-5-item-2-1:nth-child(5)
-  .app-link {
+.section-5 .section-5-container .section-5-items .section-5-items-2 .section-5-item-2-1:nth-child(5) .app-link {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
