@@ -1,462 +1,618 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>zomato</title>
-    <link rel="shortcut icon" href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png" type="image/x-icon">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <header>
-        <div class="nav">
-            <a href="#" class="logo"><img src="zmto.avif" alt=""></a>
-            <div class="search">
-                <div class="search-items">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <p>Bengaluru</p>
-                </div>
-                <div class="search-items">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <input type="text" placeholder="Search for resturant, cusines or more">
-                </div>
-            </div>
-                <a href="#" class="login">Log In</a>
-                <a href="#" class="signup">Sign up</a>
+      <div class="nav">
+        <a href="#" class="logo"><img src="zmto.avif" alt="" /></a>
+        <div class="search">
+          <div class="search-items">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>Bengaluru</p>
+          </div>
+          <div class="search-items">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input
+              type="text"
+              placeholder="Search for resturant, cusines or more"
+            />
+          </div>
         </div>
-        <div class="line">
-            <div class="category">
-                <a class="category-items" href="#">
-                    <div class="img1">
-                        <img src="scooter.png" alt="#" id="delivery">
-                    </div>
-                    <p>Delivery</p>
-                </a>
-                <a class="category-items" href="#">
-                    <div class="img2">
-                        <img src="dining.png" alt="#" id="dining">
-                    </div>
-                    <p>Dining Out</p>
-                </a>
-                <a class="category-items" href="#">
-                    <div class="img3">
-                        <img src="nighlife.png" alt="#" id="nightlife">
-                    </div>
-                    <p>Nightlife</p>
-                </a>
+        <a href="#" class="login">Log In</a>
+        <a href="#" class="signup">Sign up</a>
+      </div>
+      <div class="line">
+        <div class="category">
+          <a class="category-items" href="#">
+            <div class="img1">
+              <img src="scooter.png" alt="#" id="delivery" />
             </div>
-        </div>
-        <div class="sticky">
-            <div class="filters">
-                <a class="filter-items" href="#">
-                    <div class="filter-items-1">
-                        <i><svg xmlns="http://www.w3.org/2000/svg" fill="#9C9C9C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ"><title>filter</title><path d="M2.14 6.42h7.26c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h2.96c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001h-2.94c-0.341-1.226-1.447-2.11-2.76-2.11s-2.419 0.885-2.755 2.090l-0.005 0.020h-7.26c-0.343 0.059-0.6 0.355-0.6 0.71s0.257 0.651 0.596 0.709l0.004 0.001zM12.16 4.28c0.776 0.011 1.4 0.643 1.4 1.42 0 0.784-0.636 1.42-1.42 1.42-0.777 0-1.409-0.624-1.42-1.399l-0-0.001c-0-0.006-0-0.013-0-0.020 0-0.784 0.636-1.42 1.42-1.42 0.007 0 0.014 0 0.021 0l-0.001-0zM17.86 13.58h-7.24c-0.328-1.245-1.443-2.148-2.77-2.148s-2.442 0.903-2.766 2.128l-0.004 0.020h-2.94c-0.036-0.006-0.077-0.010-0.12-0.010-0.398 0-0.72 0.322-0.72 0.72s0.322 0.72 0.72 0.72c0.042 0 0.084-0.004 0.124-0.011l-0.004 0.001h2.96c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h7.26c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001zM7.84 15.72c-0.776-0.011-1.4-0.643-1.4-1.42 0-0.784 0.636-1.42 1.42-1.42 0.777 0 1.409 0.624 1.42 1.399l0 0.001c0 0.006 0 0.013 0 0.020 0 0.784-0.636 1.42-1.42 1.42-0.007 0-0.014-0-0.021-0l0.001 0z"></path></svg></i>
-                        <p>Filters</p>
-                    </div>
-                </a>
-                <a class="filter-items" href="#">
-                    <p class="filter-items-rating">Rating: 4.0+</p>
-                </a>
-                <a class="filter-items" href="#">
-                    <p class="filter-items-veg">Pure Veg</p>
-                </a>
-                <a class="filter-items" href="#">
-                    <div class="filter-items-1">
-                        <p>Cuisines</p>
-                        <i class="fa fa-angle-down"></i>
-                    </div>
-                </a>
-                <a class="filter-items"href="#">
-                    <div class="filter-items-1">
-                        <p>More filters</p>
-                        <i class="fa fa-angle-down"></i>
-                    </div>
-                </a>
+            <p>Delivery</p>
+          </a>
+          <a class="category-items" href="#">
+            <div class="img2">
+              <img src="dining.png" alt="#" id="dining" />
             </div>
+            <p>Dining Out</p>
+          </a>
+          <a class="category-items" href="#">
+            <div class="img3">
+              <img src="nighlife.png" alt="#" id="nightlife" />
+            </div>
+            <p>Nightlife</p>
+          </a>
         </div>
+      </div>
+      <div class="sticky">
+        <div class="filters">
+          <a class="filter-items" href="#">
+            <div class="filter-items-1">
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#9C9C9C"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 iwHbVQ"
+                >
+                  <title>filter</title>
+                  <path
+                    d="M2.14 6.42h7.26c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h2.96c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001h-2.94c-0.341-1.226-1.447-2.11-2.76-2.11s-2.419 0.885-2.755 2.090l-0.005 0.020h-7.26c-0.343 0.059-0.6 0.355-0.6 0.71s0.257 0.651 0.596 0.709l0.004 0.001zM12.16 4.28c0.776 0.011 1.4 0.643 1.4 1.42 0 0.784-0.636 1.42-1.42 1.42-0.777 0-1.409-0.624-1.42-1.399l-0-0.001c-0-0.006-0-0.013-0-0.020 0-0.784 0.636-1.42 1.42-1.42 0.007 0 0.014 0 0.021 0l-0.001-0zM17.86 13.58h-7.24c-0.328-1.245-1.443-2.148-2.77-2.148s-2.442 0.903-2.766 2.128l-0.004 0.020h-2.94c-0.036-0.006-0.077-0.010-0.12-0.010-0.398 0-0.72 0.322-0.72 0.72s0.322 0.72 0.72 0.72c0.042 0 0.084-0.004 0.124-0.011l-0.004 0.001h2.96c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h7.26c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001zM7.84 15.72c-0.776-0.011-1.4-0.643-1.4-1.42 0-0.784 0.636-1.42 1.42-1.42 0.777 0 1.409 0.624 1.42 1.399l0 0.001c0 0.006 0 0.013 0 0.020 0 0.784-0.636 1.42-1.42 1.42-0.007 0-0.014-0-0.021-0l0.001 0z"
+                  ></path>
+                </svg>
+              </i>
+              <p>Filters</p>
+            </div>
+          </a>
+          <a class="filter-items" href="#">
+            <p class="filter-items-rating">Rating: 4.0+</p>
+          </a>
+          <a class="filter-items" href="#">
+            <p class="filter-items-veg">Pure Veg</p>
+          </a>
+          <a class="filter-items" href="#">
+            <div class="filter-items-1">
+              <p>Cuisines</p>
+              <i class="fa fa-angle-down"></i>
+            </div>
+          </a>
+          <a class="filter-items" href="#">
+            <div class="filter-items-1">
+              <p>More filters</p>
+              <i class="fa fa-angle-down"></i>
+            </div>
+          </a>
+        </div>
+      </div>
     </header>
     <section class="section-1">
-        <div class="section-1-container">
-            <div class="container-item">
-                <h1 class="inspiration">Inspiration for your first order</h1>
-            </div>
-            <div class="container-item">
-                <div class="container-item-lists">
-                    <a href="#" class="imgs"><img src="biryani.png" alt=""></a>
-                    <a href="#" class="figcption"><p>Biryani</p></a>
-                </div>
-                <div class="container-item-lists">
-                    <a href="#" class="imgs"><img src="pizza.png" alt=""></a>
-                    <a href="#" class="figcption"><p>Pizza</p></a>
-                </div>
-                <div class="container-item-lists">
-                    <a href="#" class="imgs"><img src="chicken.png" alt=""></a>
-                    <a href="#" class="figcption"><p>Chicken</p></a>
-                </div>
-                <div class="container-item-lists">
-                    <a href="#" class="imgs"><img src="rolls.png" alt=""></a>
-                    <a href="#" class="figcption"><p>Rolls</p></a>
-                </div>
-                <div class="container-item-lists">
-                    <a href="#" class="imgs"><img src="burger.png" alt=""></a>
-                    <a href="#" class="figcption"><p>Burger</p></a>
-                </div>
-                <div class="container-item-lists">
-                    <a href="#" class="imgs"><img src="thali.png" alt=""></a>
-                    <a href="#" class="figcption"><p>Thali</p></a>
-                </div>
-            </div>
-        </div>        
+      <div class="section-1-container">
+        <div class="container-item">
+          <h1 class="inspiration">Inspiration for your first order</h1>
+        </div>
+        <div class="container-item">
+          <div class="container-item-lists">
+            <a href="#" class="imgs"><img src="biryani.png" alt="" /></a>
+            <a href="#" class="figcption"><p>Biryani</p></a>
+          </div>
+          <div class="container-item-lists">
+            <a href="#" class="imgs"><img src="pizza.png" alt="" /></a>
+            <a href="#" class="figcption"><p>Pizza</p></a>
+          </div>
+          <div class="container-item-lists">
+            <a href="#" class="imgs"><img src="chicken.png" alt="" /></a>
+            <a href="#" class="figcption"><p>Chicken</p></a>
+          </div>
+          <div class="container-item-lists">
+            <a href="#" class="imgs"><img src="rolls.png" alt="" /></a>
+            <a href="#" class="figcption"><p>Rolls</p></a>
+          </div>
+          <div class="container-item-lists">
+            <a href="#" class="imgs"><img src="burger.png" alt="" /></a>
+            <a href="#" class="figcption"><p>Burger</p></a>
+          </div>
+          <div class="container-item-lists">
+            <a href="#" class="imgs"><img src="thali.png" alt="" /></a>
+            <a href="#" class="figcption"><p>Thali</p></a>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section-2">
-        <div class="section-2-container">
-            <div class="container-item">
-                <h1 class="topbrands">Top brands for you</h1>
-            </div>
-            <div class="container-item">
-                <div class="container-item-lists">
-                    <a href="#" class="imgs">
-                        <div class="img2">
-                            <img src="meghna_foods.avif" alt="">
-                        </div>
-                    </a>
-                    <a href="#" class="figcption"><p>Meghana Foods</p></a>
-                    <a href="#" class="time"><p>22 min</p></a>
-                </div>
-                <div class="container-item-lists">
-                    <a href="#" class="imgs">
-                        <div class="img2">
-                            <img src="truffles.avif" alt="">
-                        </div>
-                    </a>
-                    <a href="#" class="figcption"><p>Truffles</p></a>
-                    <a href="#" class="time"><p>23 min</p></a>
-                </div>
-                <div class="container-item-lists">
-                    <a href="#" class="imgs">
-                        <div class="img2">
-                            <img src="dominos.avif" alt="">
-                        </div>
-                    </a>
-                    <a href="#" class="figcption"><p>Domino's Pizza</p></a>
-                    <a href="#" class="time"><p>20 min</p></a>
-                </div>
-                <div class="container-item-lists">
-                    <a href="#" class="imgs">
-                        <div class="img2">
-                            <img src="empire.avif" alt="">
-                        </div>
-                    </a>
-                    <a href="#" class="figcption"><p>Empire Resturant</p></a>
-                    <a href="#" class="time"><p>30 min</p></a>
-                </div>
-                <div class="container-item-lists">
-                    <a href="#" class="imgs">
-                        <div class="img2">
-                            <img src="macdd.png" alt="">
-                        </div>
-                    </a>
-                    <a href="#" class="figcption"><p>McDonald's</p></a>
-                    <a href="#" class="time"><p>23 min</p></a>
-                </div>
-                <div class="container-item-lists">
-                    <a href="#" class="imgs">
-                        <div class="img2">
-                            <img src="freshmenu.avif" alt="">
-                        </div>
-                    </a>
-                    <a href="#" class="figcption"><p>FreshMenu</p></a>
-                    <a href="#" class="time"><p>28 min</p></a>
-                </div>
-            </div>
+      <div class="section-2-container">
+        <div class="container-item">
+          <h1 class="topbrands">Top brands for you</h1>
         </div>
+        <div class="container-item">
+          <div class="container-item-lists">
+            <a href="#" class="imgs">
+              <div class="img2">
+                <img src="meghna_foods.avif" alt="" />
+              </div>
+            </a>
+            <a href="#" class="figcption"><p>Meghana Foods</p></a>
+            <a href="#" class="time"><p>22 min</p></a>
+          </div>
+          <div class="container-item-lists">
+            <a href="#" class="imgs">
+              <div class="img2">
+                <img src="truffles.avif" alt="" />
+              </div>
+            </a>
+            <a href="#" class="figcption"><p>Truffles</p></a>
+            <a href="#" class="time"><p>23 min</p></a>
+          </div>
+          <div class="container-item-lists">
+            <a href="#" class="imgs">
+              <div class="img2">
+                <img src="dominos.avif" alt="" />
+              </div>
+            </a>
+            <a href="#" class="figcption"><p>Domino's Pizza</p></a>
+            <a href="#" class="time"><p>20 min</p></a>
+          </div>
+          <div class="container-item-lists">
+            <a href="#" class="imgs">
+              <div class="img2">
+                <img src="empire.avif" alt="" />
+              </div>
+            </a>
+            <a href="#" class="figcption"><p>Empire Resturant</p></a>
+            <a href="#" class="time"><p>30 min</p></a>
+          </div>
+          <div class="container-item-lists">
+            <a href="#" class="imgs">
+              <div class="img2">
+                <img src="macdd.png" alt="" />
+              </div>
+            </a>
+            <a href="#" class="figcption"><p>McDonald's</p></a>
+            <a href="#" class="time"><p>23 min</p></a>
+          </div>
+          <div class="container-item-lists">
+            <a href="#" class="imgs">
+              <div class="img2">
+                <img src="freshmenu.avif" alt="" />
+              </div>
+            </a>
+            <a href="#" class="figcption"><p>FreshMenu</p></a>
+            <a href="#" class="time"><p>28 min</p></a>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section-3">
-        <div class="section-3-container">
-            <h1 class="heading">Best Food In Bengaluru</h1>
-            <div class="cards">
-                <div class="middle">
-                    <div class="section-3-item">  
-                        <div class="section-3-item-img">
-                            <a href="#" class="image">
-                                <img src="udupi.avif" alt="" class="restu">
-                                <p class="off">50% OFF up to 100</p>
-                                <p class="time">22 min</p>
-                            </a>
-                        </div>
-                        <div class="restpart">
-                            <a href="#" class="name">
-                                <p class="rest-name">Sri Udupi Food Hub</p>
-                                <p class="rating">4.5&#9733;</p>
-                            </a>
-                            <a href="#" class="description">
-                                <p class="rest-descrpt">South Indian, Chinese, Biry...</p>
-                                <p class="estimate">&#8377;50 for one</p>
-                            </a>
-                            <a href="#" class="trend">
-                                <img src="trnd.webp" alt="" class="trndimg">
-                                <p class="total-order">3475+ orders placed from here recently</p>
-                                <img src="safety.webp" alt="" class="safetyimg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="middle">
-                    <div class="section-3-item">
-                        <div class="section-3-item-img">
-                            <a href="#" class="image">
-                                <img src="kantisweet.avif" alt="" class="restu">
-                                <p class="off">50% OFF up to 100</p>
-                                <p class="time">23 min</p>
-                            </a>
-                        </div>
-                        <div class="restpart">
-                            <a href="#" class="name">
-                                <p class="rest-name">Kanti Sweets</p>
-                                <p class="rating">4.3&#9733;</p>
-                            </a>
-                            <a href="#" class="description">
-                                <p class="rest-descrpt">Mithai, Desserts, Street Fo...</p>
-                                <p class="estimate">&#8377;150 for one</p>
-                            </a>
-                            <a href="#" class="trend">
-                                <img src="trnd.webp" alt="" class="trndimg">
-                                <p class="total-order">3000+ orders placed from here recently</p>
-                                <img src="safety.webp" alt="" class="safetyimg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="middle">
-                    <div class="section-3-item">
-                        <div class="section-3-item-img">
-                            <a href="#" class="image">
-                                <img src="id.avif" alt="" class="restu">
-                                <p class="off">50% OFF up to 100</p>
-                                <p class="time">22 min</p>
-                            </a>
-                        </div>
-                        <div class="restpart">
-                            <a href="#" class="name">
-                                <p class="rest-name">IDC Kitchen</p>
-                                <p class="rating">4.2&#9733;</p>
-                            </a>
-                            <a href="#" class="description">
-                                <p class="rest-descrpt">South Indian, Beverages </p>
-                                <p class="estimate">&#8377;50 for one</p>
-                            </a>
-                            <a href="#" class="trend">
-                                <img src="trnd.webp" alt="" class="trndimg">
-                                <p class="total-order">6400+ orders placed from here recently</p>
-                                <img src="safety.webp" alt="" class="safetyimg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="middle">
-                    <div class="section-3-item">
-                        <div class="section-3-item-img">
-                            <a href="#" class="image">
-                                <img src="samosaparty.avif" alt="" class="restu">
-                                <p class="off">50% OFF up to 100</p>
-                                <p class="time">27 min</p>
-                            </a>
-                        </div>
-                        <div class="restpart">
-                            <a href="#" class="name">
-                                <p class="rest-name">Samosa Party</p>
-                                <p class="rating">4.2&#9733;</p>
-                            </a>
-                            <a href="#" class="description">
-                                <p class="rest-descrpt">Street Food, Tea </p>
-                                <p class="estimate">&#8377;50 for one</p>
-                            </a>
-                            <a href="#" class="trend">
-                                <img src="trnd.webp" alt="" class="trndimg">
-                                <p class="total-order">6400+ orders placed from here recently</p>
-                                <img src="safety.webp" alt="" class="safetyimg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="middle">
-                    <div class="section-3-item">
-                        <div class="section-3-item-img">
-                            <a href="#" class="image">
-                                <img src="burgerking.avif" alt="" class="restu">
-                                <p class="off"></p>
-                                <p class="time">31 min</p>
-                            </a>
-                        </div>
-                        <div class="restpart">
-                            <a href="#" class="name">
-                                <p class="rest-name">Burger King</p>
-                                <p class="rating">3.9&#9733;</p>
-                            </a>
-                            <a href="#" class="description">
-                                <p class="rest-descrpt">Burger, Fast Food, Desser...</p>
-                                <p class="estimate">&#8377;150 for one</p>
-                            </a>
-                            <a href="#" class="trend">
-                                <img src="trnd.webp" alt="" class="trndimg">
-                                <p class="total-order">4800+ orders placed from here recently</p>
-                                <img src="safety.webp" alt="" class="safetyimg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="middle">
-                    <div class="section-3-item">
-                        <div class="section-3-item-img">
-                            <a href="#" class="image">
-                                <img src="mac_D.avif" alt="" class="restu">
-                                <p class="off">50% OFF up to 100</p>
-                                <p class="time">23 min</p>
-                            </a>
-                        </div>
-                        <div class="restpart">
-                            <a href="#" class="name">
-                                <p class="rest-name">McDonald's</p>
-                                <p class="rating">3.9&#9733;</p>
-                            </a>
-                            <a href="#" class="description">
-                                <p class="rest-descrpt">Burger, Fast Food</p>
-                                <p class="estimate">&#8377;100 for one</p>
-                            </a>
-                            <a href="#" class="trend">
-                                <img src="trnd.webp" alt="" class="trndimg">
-                                <p class="total-order">3475+ orders placed from here recently</p>
-                                <img src="safety.webp" alt="" class="safetyimg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>    
+      <div class="section-3-container">
+        <h1 class="heading">Best Food In Bengaluru</h1>
+        <div class="cards">
+          <div class="middle">
+            <div class="section-3-item">
+              <div class="section-3-item-img">
+                <a href="#" class="image">
+                  <img src="udupi.avif" alt="" class="restu" />
+                  <p class="off">50% OFF up to 100</p>
+                  <p class="time">22 min</p>
+                </a>
+              </div>
+              <div class="restpart">
+                <a href="#" class="name">
+                  <p class="rest-name">Sri Udupi Food Hub</p>
+                  <p class="rating">4.5&#9733;</p>
+                </a>
+                <a href="#" class="description">
+                  <p class="rest-descrpt">South Indian, Chinese, Biry...</p>
+                  <p class="estimate">&#8377;50 for one</p>
+                </a>
+                <a href="#" class="trend">
+                  <img src="trnd.webp" alt="" class="trndimg" />
+                  <p class="total-order">
+                    3475+ orders placed from here recently
+                  </p>
+                  <img src="safety.webp" alt="" class="safetyimg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="section-3-item">
+              <div class="section-3-item-img">
+                <a href="#" class="image">
+                  <img src="kantisweet.avif" alt="" class="restu" />
+                  <p class="off">50% OFF up to 100</p>
+                  <p class="time">23 min</p>
+                </a>
+              </div>
+              <div class="restpart">
+                <a href="#" class="name">
+                  <p class="rest-name">Kanti Sweets</p>
+                  <p class="rating">4.3&#9733;</p>
+                </a>
+                <a href="#" class="description">
+                  <p class="rest-descrpt">Mithai, Desserts, Street Fo...</p>
+                  <p class="estimate">&#8377;150 for one</p>
+                </a>
+                <a href="#" class="trend">
+                  <img src="trnd.webp" alt="" class="trndimg" />
+                  <p class="total-order">
+                    3000+ orders placed from here recently
+                  </p>
+                  <img src="safety.webp" alt="" class="safetyimg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="section-3-item">
+              <div class="section-3-item-img">
+                <a href="#" class="image">
+                  <img src="id.avif" alt="" class="restu" />
+                  <p class="off">50% OFF up to 100</p>
+                  <p class="time">22 min</p>
+                </a>
+              </div>
+              <div class="restpart">
+                <a href="#" class="name">
+                  <p class="rest-name">IDC Kitchen</p>
+                  <p class="rating">4.2&#9733;</p>
+                </a>
+                <a href="#" class="description">
+                  <p class="rest-descrpt">South Indian, Beverages</p>
+                  <p class="estimate">&#8377;50 for one</p>
+                </a>
+                <a href="#" class="trend">
+                  <img src="trnd.webp" alt="" class="trndimg" />
+                  <p class="total-order">
+                    6400+ orders placed from here recently
+                  </p>
+                  <img src="safety.webp" alt="" class="safetyimg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="section-3-item">
+              <div class="section-3-item-img">
+                <a href="#" class="image">
+                  <img src="samosaparty.avif" alt="" class="restu" />
+                  <p class="off">50% OFF up to 100</p>
+                  <p class="time">27 min</p>
+                </a>
+              </div>
+              <div class="restpart">
+                <a href="#" class="name">
+                  <p class="rest-name">Samosa Party</p>
+                  <p class="rating">4.2&#9733;</p>
+                </a>
+                <a href="#" class="description">
+                  <p class="rest-descrpt">Street Food, Tea</p>
+                  <p class="estimate">&#8377;50 for one</p>
+                </a>
+                <a href="#" class="trend">
+                  <img src="trnd.webp" alt="" class="trndimg" />
+                  <p class="total-order">
+                    6400+ orders placed from here recently
+                  </p>
+                  <img src="safety.webp" alt="" class="safetyimg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="section-3-item">
+              <div class="section-3-item-img">
+                <a href="#" class="image">
+                  <img src="burgerking.avif" alt="" class="restu" />
+                  <p class="off"></p>
+                  <p class="time">31 min</p>
+                </a>
+              </div>
+              <div class="restpart">
+                <a href="#" class="name">
+                  <p class="rest-name">Burger King</p>
+                  <p class="rating">3.9&#9733;</p>
+                </a>
+                <a href="#" class="description">
+                  <p class="rest-descrpt">Burger, Fast Food, Desser...</p>
+                  <p class="estimate">&#8377;150 for one</p>
+                </a>
+                <a href="#" class="trend">
+                  <img src="trnd.webp" alt="" class="trndimg" />
+                  <p class="total-order">
+                    4800+ orders placed from here recently
+                  </p>
+                  <img src="safety.webp" alt="" class="safetyimg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="section-3-item">
+              <div class="section-3-item-img">
+                <a href="#" class="image">
+                  <img src="mac_D.avif" alt="" class="restu" />
+                  <p class="off">50% OFF up to 100</p>
+                  <p class="time">23 min</p>
+                </a>
+              </div>
+              <div class="restpart">
+                <a href="#" class="name">
+                  <p class="rest-name">McDonald's</p>
+                  <p class="rating">3.9&#9733;</p>
+                </a>
+                <a href="#" class="description">
+                  <p class="rest-descrpt">Burger, Fast Food</p>
+                  <p class="estimate">&#8377;100 for one</p>
+                </a>
+                <a href="#" class="trend">
+                  <img src="trnd.webp" alt="" class="trndimg" />
+                  <p class="total-order">
+                    3475+ orders placed from here recently
+                  </p>
+                  <img src="safety.webp" alt="" class="safetyimg" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="section-4">
-        <div class="section-4-container">
-            <h1 class="section-4-item-1">Explore options near me</h1>
-            <div class="section-4-item-2">
-                <a class="section-4-items">
-                    <div href="#" class="section-4-items-1">
-                        <p class="section-4-items-1-description">Popular cuisines near me</p>
-                        <div class="section-4-items-1-icon">
-                            <i class="fa fa-angle-down"></i>
-                        </div>
-                    </div>
-                </a>
-                <a class="section-4-items">
-                    <div href="#" class="section-4-items-1">
-                        <p class="section-4-items-1-description">Popular resturant types near me</p>
-                        <div class="section-4-items-1-icon">
-                            <i class="fa fa-angle-down"></i>
-                        </div>
-                    </div>
-                </a>
-                <a class="section-4-items">
-                    <div href="#" class="section-4-items-1">
-                        <p class="section-4-items-1-description">Top Resturant Chains</p>
-                        <div class="section-4-items-1-icon">
-                            <i class="fa fa-angle-down"></i>
-                        </div>
-                    </div>
-                </a>
-                <a class="section-4-items">
-                    <div href="#" class="section-4-items-1">
-                        <p class="section-4-items-1-description">Cities We Deliver To</p>
-                        <div class="section-4-items-1-icon">
-                            <i class="fa fa-angle-down"></i>
-                        </div>
-                    </div>
-                </a>
+      <div class="section-4-container">
+        <h1 class="section-4-item-1">Explore options near me</h1>
+        <div class="section-4-item-2">
+          <a class="section-4-items">
+            <div href="#" class="section-4-items-1">
+              <p class="section-4-items-1-description">
+                Popular cuisines near me
+              </p>
+              <div class="section-4-items-1-icon">
+                <i class="fa fa-angle-down"></i>
+              </div>
             </div>
+          </a>
+          <a class="section-4-items">
+            <div href="#" class="section-4-items-1">
+              <p class="section-4-items-1-description">
+                Popular resturant types near me
+              </p>
+              <div class="section-4-items-1-icon">
+                <i class="fa fa-angle-down"></i>
+              </div>
+            </div>
+          </a>
+          <a class="section-4-items">
+            <div href="#" class="section-4-items-1">
+              <p class="section-4-items-1-description">Top Resturant Chains</p>
+              <div class="section-4-items-1-icon">
+                <i class="fa fa-angle-down"></i>
+              </div>
+            </div>
+          </a>
+          <a class="section-4-items">
+            <div href="#" class="section-4-items-1">
+              <p class="section-4-items-1-description">Cities We Deliver To</p>
+              <div class="section-4-items-1-icon">
+                <i class="fa fa-angle-down"></i>
+              </div>
+            </div>
+          </a>
         </div>
+      </div>
     </section>
     <section class="section-5">
-        <div class="section-5-container">
-            <div class="section-5-items">
-                <div class="section-5-items-1">
-                    <img src="zmto.avif" alt="">
-                    <div class="section-5-items-1-2">
-                        <a href="#" class="section-5-item-1-2-1">
-                            <i><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="22" preserveAspectRatio="xMidYMid meet" version="1.0" id="IconChangeColor"><defs><clipPath id="id1"><path d="M 2.371094 18 L 27.773438 18 L 27.773438 23.921875 L 2.371094 23.921875 Z M 2.371094 18 " clip-rule="nonzero" id="mainIconPathAttribute"></path></clipPath><clipPath id="id2"><path d="M 2.371094 10 L 27.773438 10 L 27.773438 19 L 2.371094 19 Z M 2.371094 10 " clip-rule="nonzero" id="mainIconPathAttribute"></path></clipPath><clipPath id="id3"><path d="M 2.371094 5.050781 L 27.773438 5.050781 L 27.773438 11 L 2.371094 11 Z M 2.371094 5.050781 " clip-rule="nonzero" id="mainIconPathAttribute"></path></clipPath></defs><g clip-path="url(#id1)"><path fill="rgb(7.449341%, 53.329468%, 3.138733%)" d="M 2.375 21.019531 C 2.375 22.625 3.640625 23.921875 5.199219 23.921875 L 24.945312 23.921875 C 26.503906 23.921875 27.769531 22.625 27.769531 21.019531 L 27.769531 18.117188 L 2.375 18.117188 Z M 2.375 21.019531 " fill-opacity="1" fill-rule="nonzero" id="mainIconPathAttribute"></path></g><g clip-path="url(#id2)"><path fill="rgb(93.328857%, 93.328857%, 93.328857%)" d="M 2.375 10.859375 L 27.769531 10.859375 L 27.769531 18.117188 L 2.375 18.117188 Z M 2.375 10.859375 " fill-opacity="1" fill-rule="nonzero" id="mainIconPathAttribute"></path></g><g clip-path="url(#id3)"><path fill="rgb(100%, 59.999084%, 19.999695%)" d="M 27.769531 10.859375 L 27.769531 7.957031 C 27.769531 6.351562 26.503906 5.050781 24.945312 5.050781 L 5.199219 5.050781 C 3.640625 5.050781 2.375 6.351562 2.375 7.957031 L 2.375 10.859375 Z M 27.769531 10.859375 " fill-opacity="1" fill-rule="nonzero" id="mainIconPathAttribute"></path></g><path fill="rgb(0%, 0%, 50.19989%)" d="M 17.894531 14.488281 C 17.894531 14.871094 17.820312 15.242188 17.679688 15.597656 C 17.535156 15.953125 17.332031 16.269531 17.066406 16.539062 C 16.804688 16.8125 16.496094 17.023438 16.152344 17.167969 C 15.804688 17.316406 15.445312 17.390625 15.074219 17.390625 C 14.699219 17.390625 14.339844 17.316406 13.992188 17.167969 C 13.648438 17.023438 13.34375 16.8125 13.078125 16.539062 C 12.8125 16.269531 12.609375 15.953125 12.464844 15.597656 C 12.324219 15.242188 12.25 14.871094 12.25 14.488281 C 12.25 14.101562 12.324219 13.730469 12.464844 13.375 C 12.609375 13.019531 12.8125 12.707031 13.078125 12.433594 C 13.34375 12.164062 13.648438 11.953125 13.992188 11.804688 C 14.339844 11.65625 14.699219 11.585938 15.074219 11.585938 C 15.445312 11.585938 15.804688 11.65625 16.152344 11.804688 C 16.496094 11.953125 16.804688 12.164062 17.066406 12.433594 C 17.332031 12.707031 17.535156 13.019531 17.679688 13.375 C 17.820312 13.730469 17.894531 14.101562 17.894531 14.488281 Z M 17.894531 14.488281 " fill-opacity="1" fill-rule="nonzero" id="mainIconPathAttribute"></path><path fill="rgb(93.328857%, 93.328857%, 93.328857%)" d="M 17.1875 14.488281 C 17.1875 14.777344 17.136719 15.054688 17.027344 15.320312 C 16.921875 15.585938 16.765625 15.824219 16.570312 16.027344 C 16.371094 16.230469 16.140625 16.390625 15.882812 16.5 C 15.621094 16.609375 15.351562 16.664062 15.074219 16.664062 C 14.792969 16.664062 14.523438 16.609375 14.261719 16.5 C 14.003906 16.390625 13.773438 16.230469 13.578125 16.027344 C 13.378906 15.824219 13.226562 15.585938 13.117188 15.320312 C 13.011719 15.054688 12.957031 14.777344 12.957031 14.488281 C 12.957031 14.199219 13.011719 13.921875 13.117188 13.65625 C 13.226562 13.386719 13.378906 13.152344 13.578125 12.949219 C 13.773438 12.742188 14.003906 12.585938 14.261719 12.476562 C 14.523438 12.367188 14.792969 12.308594 15.074219 12.308594 C 15.351562 12.308594 15.621094 12.367188 15.882812 12.476562 C 16.140625 12.585938 16.371094 12.742188 16.570312 12.949219 C 16.765625 13.152344 16.921875 13.386719 17.027344 13.65625 C 17.136719 13.921875 17.1875 14.199219 17.1875 14.488281 Z M 17.1875 14.488281 " fill-opacity="1" fill-rule="nonzero" id="mainIconPathAttribute"></path><path fill="rgb(39.99939%, 39.99939%, 70.199585%)" d="M 15.074219 12.308594 L 15.175781 13.953125 L 15.882812 12.476562 L 15.367188 14.035156 L 16.570312 12.949219 L 15.511719 14.183594 L 17.027344 13.65625 L 15.589844 14.382812 L 17.1875 14.488281 L 15.589844 14.59375 L 17.027344 15.320312 L 15.511719 14.789062 L 16.570312 16.027344 L 15.367188 14.941406 L 15.882812 16.5 L 15.175781 15.023438 L 15.074219 16.664062 L 14.96875 15.023438 L 14.261719 16.5 L 14.777344 14.941406 L 13.574219 16.027344 L 14.632812 14.789062 L 13.117188 15.320312 L 14.554688 14.59375 L 12.957031 14.488281 L 14.554688 14.382812 L 13.117188 13.65625 L 14.632812 14.183594 L 13.574219 12.949219 L 14.777344 14.035156 L 14.261719 12.476562 L 14.96875 13.953125 Z M 15.074219 12.308594 " fill-opacity="1" fill-rule="nonzero" id="mainIconPathAttribute"></path><path fill="rgb(0%, 0%, 50.19989%)" d="M 15.777344 14.488281 C 15.777344 14.6875 15.707031 14.859375 15.570312 15 C 15.433594 15.140625 15.265625 15.214844 15.074219 15.214844 C 14.878906 15.214844 14.710938 15.140625 14.574219 15 C 14.4375 14.859375 14.367188 14.6875 14.367188 14.488281 C 14.367188 14.289062 14.4375 14.117188 14.574219 13.972656 C 14.710938 13.832031 14.878906 13.761719 15.074219 13.761719 C 15.265625 13.761719 15.433594 13.832031 15.570312 13.972656 C 15.707031 14.117188 15.777344 14.289062 15.777344 14.488281 Z M 15.777344 14.488281 " fill-opacity="1" fill-rule="nonzero" id="mainIconPathAttribute"></path></svg></i>
-                            <p class="country">India</p>
-                            <i class="fa fa-angle-down" id="angel"></i>
-                        </a>
-                        <a href="#" class="section-5-item-1-2-1">
-                            <i><svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iwHbVQ"><title>language-globe</title><path d="M10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c-0.011-5.518-4.482-9.989-9.999-10h-0.001zM17.14 6.18h-3c-0.264-1.393-0.63-2.62-1.107-3.791l0.047 0.131c1.755 0.733 3.161 2.010 4.039 3.618l0.021 0.042zM18.1 10c-0.002 0.676-0.090 1.33-0.252 1.954l0.012-0.054h-3.44c0.059-0.57 0.092-1.231 0.092-1.9s-0.034-1.33-0.099-1.982l0.007 0.082h3.44c0.15 0.57 0.238 1.224 0.24 1.899v0.001zM1.9 10c0.002-0.676 0.090-1.33 0.252-1.954l-0.012 0.054h3.46c-0.059 0.57-0.092 1.231-0.092 1.9s0.034 1.33 0.099 1.982l-0.007-0.082h-3.46c-0.15-0.57-0.238-1.224-0.24-1.899v-0.001zM7.48 8.1h5.040c0.063 0.57 0.099 1.231 0.099 1.9s-0.036 1.33-0.107 1.981l0.007-0.081h-5.040c-0.063-0.57-0.099-1.231-0.099-1.9s0.036-1.33 0.107-1.981l-0.007 0.081zM10.76 1.9c0.603 1.228 1.106 2.657 1.436 4.152l0.024 0.128h-4.44c0.354-1.623 0.857-3.052 1.51-4.395l-0.050 0.115c0.24 0 0.5 0 0.76 0s0.48 0 0.76 0zM6.96 2.48c-0.445 1.051-0.825 2.291-1.079 3.576l-0.021 0.124h-3c0.899-1.65 2.305-2.927 4.007-3.64l0.053-0.020zM2.86 13.8h3c0.262 1.4 0.629 2.634 1.107 3.811l-0.047-0.131c-1.757-0.738-3.165-2.022-4.039-3.637l-0.021-0.043zM9.24 18.1c-0.605-1.234-1.108-2.67-1.437-4.172l-0.023-0.128h4.44c-0.352 1.63-0.855 3.066-1.51 4.415l0.050-0.115c-0.24 0-0.5 0-0.76 0s-0.48 0-0.76 0zM13.040 17.52c0.431-1.046 0.798-2.28 1.041-3.558l0.019-0.122h3.040c-0.902 1.642-2.308 2.912-4.006 3.62l-0.054 0.020z"></path></svg></i>
-                            <p class="language">English</p>
-                            <i class="fa fa-angle-down" id="angel"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="section-5-items-2">
-                    <div class="section-5-item-2-1">
-                        <p class="about">ABOUT ZOMATO</p>
-                        <div class="about-section">
-                            <a href="#">Who We Are</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Work With Us</a>
-                            <a href="#">Investor Relations</a>
-                            <a href="#">Report Fraud</a>
-                            <a href="#">Contact Us</a>
-                        </div>
-                    </div>
-                    <div class="section-5-item-2-1">
-                        <p class="about">ZOMAVERSE</p>
-                        <div class="about-section">
-                            <a href="#">Zomato</a>
-                            <a href="#">Blinkit</a>
-                            <a href="#">Feeding India</a>
-                            <a href="#">Hyperpure</a>
-                            <a href="#">Zomoland</a>
-                        </div>
-                    </div>
-                    <div class="section-5-item-2-1">
-                        <p class="about">FOR RESTURANTS</p>
-                        <div class="about-section">
-                            <a href="#">Partner With Us</a>
-                            <a href="#">Apps For You</a>
-                        </div>
-                        <div class="enterprise">
-                            <p class="about-enter">FOR ENTERPRISES</p>
-                            <div class="about-section">
-                                <a href="#">Zomato For Enterprise</a>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="section-5-item-2-1">
-                        <p class="about">LEARN MORE</p>
-                        <div class="about-section">
-                            <a href="#">Privacy</a>
-                            <a href="#">Security</a>
-                            <a href="#">Terms</a>
-                            <a href="#">Sitemap</a>
-                        </div>
-                    </div>
-                    <div class="section-5-item-2-1">
-                        <p class="about">SOCIAL LINKS</p>
-                        <div class="sociallinks">
-                            <a href="#" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-youtube"></a>
-                            <a href="#" class="fa fa-facebook"></a>
-                        </div>
-                        <div class="app-link">
-                            <a href="#"><img src="apple.webp" alt="#" width="150px"></a>
-                            <a href="#"><img src="playy.webp" alt="#" id="play" width="150px"></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="section-5-container">
+        <div class="section-5-items">
+          <div class="section-5-items-1">
+            <img src="zmto.avif" alt="" />
+            <div class="section-5-items-1-2">
+              <a href="#" class="section-5-item-1-2-1">
+                <i
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="22"
+                    zoomAndPan="magnify"
+                    viewBox="0 0 30 30.000001"
+                    height="22"
+                    preserveAspectRatio="xMidYMid meet"
+                    version="1.0"
+                    id="IconChangeColor"
+                  >
+                    <defs>
+                      <clipPath id="id1">
+                        <path
+                          d="M 2.371094 18 L 27.773438 18 L 27.773438 23.921875 L 2.371094 23.921875 Z M 2.371094 18 "
+                          clip-rule="nonzero"
+                          id="mainIconPathAttribute"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="id2">
+                        <path
+                          d="M 2.371094 10 L 27.773438 10 L 27.773438 19 L 2.371094 19 Z M 2.371094 10 "
+                          clip-rule="nonzero"
+                          id="mainIconPathAttribute"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="id3">
+                        <path
+                          d="M 2.371094 5.050781 L 27.773438 5.050781 L 27.773438 11 L 2.371094 11 Z M 2.371094 5.050781 "
+                          clip-rule="nonzero"
+                          id="mainIconPathAttribute"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                    <g clip-path="url(#id1)">
+                      <path
+                        fill="rgb(7.449341%, 53.329468%, 3.138733%)"
+                        d="M 2.375 21.019531 C 2.375 22.625 3.640625 23.921875 5.199219 23.921875 L 24.945312 23.921875 C 26.503906 23.921875 27.769531 22.625 27.769531 21.019531 L 27.769531 18.117188 L 2.375 18.117188 Z M 2.375 21.019531 "
+                        fill-opacity="1"
+                        fill-rule="nonzero"
+                        id="mainIconPathAttribute"
+                      ></path>
+                    </g>
+                    <g clip-path="url(#id2)">
+                      <path
+                        fill="rgb(93.328857%, 93.328857%, 93.328857%)"
+                        d="M 2.375 10.859375 L 27.769531 10.859375 L 27.769531 18.117188 L 2.375 18.117188 Z M 2.375 10.859375 "
+                        fill-opacity="1"
+                        fill-rule="nonzero"
+                        id="mainIconPathAttribute"
+                      ></path>
+                    </g>
+                    <g clip-path="url(#id3)">
+                      <path
+                        fill="rgb(100%, 59.999084%, 19.999695%)"
+                        d="M 27.769531 10.859375 L 27.769531 7.957031 C 27.769531 6.351562 26.503906 5.050781 24.945312 5.050781 L 5.199219 5.050781 C 3.640625 5.050781 2.375 6.351562 2.375 7.957031 L 2.375 10.859375 Z M 27.769531 10.859375 "
+                        fill-opacity="1"
+                        fill-rule="nonzero"
+                        id="mainIconPathAttribute"
+                      ></path>
+                    </g>
+                    <path
+                      fill="rgb(0%, 0%, 50.19989%)"
+                      d="M 17.894531 14.488281 C 17.894531 14.871094 17.820312 15.242188 17.679688 15.597656 C 17.535156 15.953125 17.332031 16.269531 17.066406 16.539062 C 16.804688 16.8125 16.496094 17.023438 16.152344 17.167969 C 15.804688 17.316406 15.445312 17.390625 15.074219 17.390625 C 14.699219 17.390625 14.339844 17.316406 13.992188 17.167969 C 13.648438 17.023438 13.34375 16.8125 13.078125 16.539062 C 12.8125 16.269531 12.609375 15.953125 12.464844 15.597656 C 12.324219 15.242188 12.25 14.871094 12.25 14.488281 C 12.25 14.101562 12.324219 13.730469 12.464844 13.375 C 12.609375 13.019531 12.8125 12.707031 13.078125 12.433594 C 13.34375 12.164062 13.648438 11.953125 13.992188 11.804688 C 14.339844 11.65625 14.699219 11.585938 15.074219 11.585938 C 15.445312 11.585938 15.804688 11.65625 16.152344 11.804688 C 16.496094 11.953125 16.804688 12.164062 17.066406 12.433594 C 17.332031 12.707031 17.535156 13.019531 17.679688 13.375 C 17.820312 13.730469 17.894531 14.101562 17.894531 14.488281 Z M 17.894531 14.488281 "
+                      fill-opacity="1"
+                      fill-rule="nonzero"
+                      id="mainIconPathAttribute"
+                    ></path>
+                    <path
+                      fill="rgb(93.328857%, 93.328857%, 93.328857%)"
+                      d="M 17.1875 14.488281 C 17.1875 14.777344 17.136719 15.054688 17.027344 15.320312 C 16.921875 15.585938 16.765625 15.824219 16.570312 16.027344 C 16.371094 16.230469 16.140625 16.390625 15.882812 16.5 C 15.621094 16.609375 15.351562 16.664062 15.074219 16.664062 C 14.792969 16.664062 14.523438 16.609375 14.261719 16.5 C 14.003906 16.390625 13.773438 16.230469 13.578125 16.027344 C 13.378906 15.824219 13.226562 15.585938 13.117188 15.320312 C 13.011719 15.054688 12.957031 14.777344 12.957031 14.488281 C 12.957031 14.199219 13.011719 13.921875 13.117188 13.65625 C 13.226562 13.386719 13.378906 13.152344 13.578125 12.949219 C 13.773438 12.742188 14.003906 12.585938 14.261719 12.476562 C 14.523438 12.367188 14.792969 12.308594 15.074219 12.308594 C 15.351562 12.308594 15.621094 12.367188 15.882812 12.476562 C 16.140625 12.585938 16.371094 12.742188 16.570312 12.949219 C 16.765625 13.152344 16.921875 13.386719 17.027344 13.65625 C 17.136719 13.921875 17.1875 14.199219 17.1875 14.488281 Z M 17.1875 14.488281 "
+                      fill-opacity="1"
+                      fill-rule="nonzero"
+                      id="mainIconPathAttribute"
+                    ></path>
+                    <path
+                      fill="rgb(39.99939%, 39.99939%, 70.199585%)"
+                      d="M 15.074219 12.308594 L 15.175781 13.953125 L 15.882812 12.476562 L 15.367188 14.035156 L 16.570312 12.949219 L 15.511719 14.183594 L 17.027344 13.65625 L 15.589844 14.382812 L 17.1875 14.488281 L 15.589844 14.59375 L 17.027344 15.320312 L 15.511719 14.789062 L 16.570312 16.027344 L 15.367188 14.941406 L 15.882812 16.5 L 15.175781 15.023438 L 15.074219 16.664062 L 14.96875 15.023438 L 14.261719 16.5 L 14.777344 14.941406 L 13.574219 16.027344 L 14.632812 14.789062 L 13.117188 15.320312 L 14.554688 14.59375 L 12.957031 14.488281 L 14.554688 14.382812 L 13.117188 13.65625 L 14.632812 14.183594 L 13.574219 12.949219 L 14.777344 14.035156 L 14.261719 12.476562 L 14.96875 13.953125 Z M 15.074219 12.308594 "
+                      fill-opacity="1"
+                      fill-rule="nonzero"
+                      id="mainIconPathAttribute"
+                    ></path>
+                    <path
+                      fill="rgb(0%, 0%, 50.19989%)"
+                      d="M 15.777344 14.488281 C 15.777344 14.6875 15.707031 14.859375 15.570312 15 C 15.433594 15.140625 15.265625 15.214844 15.074219 15.214844 C 14.878906 15.214844 14.710938 15.140625 14.574219 15 C 14.4375 14.859375 14.367188 14.6875 14.367188 14.488281 C 14.367188 14.289062 14.4375 14.117188 14.574219 13.972656 C 14.710938 13.832031 14.878906 13.761719 15.074219 13.761719 C 15.265625 13.761719 15.433594 13.832031 15.570312 13.972656 C 15.707031 14.117188 15.777344 14.289062 15.777344 14.488281 Z M 15.777344 14.488281 "
+                      fill-opacity="1"
+                      fill-rule="nonzero"
+                      id="mainIconPathAttribute"
+                    ></path>
+                  </svg>
+                </i>
+                <p class="country">India</p>
+                <i class="fa fa-angle-down" id="angel"></i>
+              </a>
+              <a href="#" class="section-5-item-1-2-1">
+                <i
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#1C1C1C"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 20 20"
+                    aria-labelledby="icon-svg-title- icon-svg-desc-"
+                    role="img"
+                    class="sc-rbbb40-0 iwHbVQ"
+                  >
+                    <title>language-globe</title>
+                    <path
+                      d="M10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c-0.011-5.518-4.482-9.989-9.999-10h-0.001zM17.14 6.18h-3c-0.264-1.393-0.63-2.62-1.107-3.791l0.047 0.131c1.755 0.733 3.161 2.010 4.039 3.618l0.021 0.042zM18.1 10c-0.002 0.676-0.090 1.33-0.252 1.954l0.012-0.054h-3.44c0.059-0.57 0.092-1.231 0.092-1.9s-0.034-1.33-0.099-1.982l0.007 0.082h3.44c0.15 0.57 0.238 1.224 0.24 1.899v0.001zM1.9 10c0.002-0.676 0.090-1.33 0.252-1.954l-0.012 0.054h3.46c-0.059 0.57-0.092 1.231-0.092 1.9s0.034 1.33 0.099 1.982l-0.007-0.082h-3.46c-0.15-0.57-0.238-1.224-0.24-1.899v-0.001zM7.48 8.1h5.040c0.063 0.57 0.099 1.231 0.099 1.9s-0.036 1.33-0.107 1.981l0.007-0.081h-5.040c-0.063-0.57-0.099-1.231-0.099-1.9s0.036-1.33 0.107-1.981l-0.007 0.081zM10.76 1.9c0.603 1.228 1.106 2.657 1.436 4.152l0.024 0.128h-4.44c0.354-1.623 0.857-3.052 1.51-4.395l-0.050 0.115c0.24 0 0.5 0 0.76 0s0.48 0 0.76 0zM6.96 2.48c-0.445 1.051-0.825 2.291-1.079 3.576l-0.021 0.124h-3c0.899-1.65 2.305-2.927 4.007-3.64l0.053-0.020zM2.86 13.8h3c0.262 1.4 0.629 2.634 1.107 3.811l-0.047-0.131c-1.757-0.738-3.165-2.022-4.039-3.637l-0.021-0.043zM9.24 18.1c-0.605-1.234-1.108-2.67-1.437-4.172l-0.023-0.128h4.44c-0.352 1.63-0.855 3.066-1.51 4.415l0.050-0.115c-0.24 0-0.5 0-0.76 0s-0.48 0-0.76 0zM13.040 17.52c0.431-1.046 0.798-2.28 1.041-3.558l0.019-0.122h3.040c-0.902 1.642-2.308 2.912-4.006 3.62l-0.054 0.020z"
+                    ></path>
+                  </svg>
+                </i>
+                <p class="language">English</p>
+                <i class="fa fa-angle-down" id="angel"></i>
+              </a>
             </div>
-            <div class="footer">
-                <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved</p>
+          </div>
+          <div class="section-5-items-2">
+            <div class="section-5-item-2-1">
+              <p class="about">ABOUT ZOMATO</p>
+              <div class="about-section">
+                <a href="#">Who We Are</a>
+                <a href="#">Blog</a>
+                <a href="#">Work With Us</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Report Fraud</a>
+                <a href="#">Contact Us</a>
+              </div>
             </div>
+            <div class="section-5-item-2-1">
+              <p class="about">ZOMAVERSE</p>
+              <div class="about-section">
+                <a href="#">Zomato</a>
+                <a href="#">Blinkit</a>
+                <a href="#">Feeding India</a>
+                <a href="#">Hyperpure</a>
+                <a href="#">Zomoland</a>
+              </div>
+            </div>
+            <div class="section-5-item-2-1">
+              <p class="about">FOR RESTURANTS</p>
+              <div class="about-section">
+                <a href="#">Partner With Us</a>
+                <a href="#">Apps For You</a>
+              </div>
+              <div class="enterprise">
+                <p class="about-enter">FOR ENTERPRISES</p>
+                <div class="about-section">
+                  <a href="#">Zomato For Enterprise</a>
+                </div>
+              </div>
+            </div>
+            <div class="section-5-item-2-1">
+              <p class="about">LEARN MORE</p>
+              <div class="about-section">
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+              </div>
+            </div>
+            <div class="section-5-item-2-1">
+              <p class="about">SOCIAL LINKS</p>
+              <div class="sociallinks">
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-facebook"></a>
+              </div>
+              <div class="app-link">
+                <a href="#"><img src="apple.webp" alt="#" width="150px" /></a>
+                <a href="#"
+                  ><img src="playy.webp" alt="#" id="play" width="150px"
+                /></a>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="footer">
+          <p>
+            By continuing past this page, you agree to our Terms of Service,
+            Cookie Policy, Privacy Policy and Content Policies. All trademarks
+            are properties of their respective owners. 2008-2023 © Zomato™ Ltd.
+            All rights reserved
+          </p>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
